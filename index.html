@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="html-css-spotifyweb/img/icons/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Spotify - Web Player</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <a href="#">
+          <img
+            src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_White.png"
+            alt="Logo"
+          />
+        </a>
+      </div>
+
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="fa fa-home"></span>
+              <span class="nav-text">Home</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span class="fa fa-search"></span>
+              <span class="nav-text">Search</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span class="fa fas fa-book"></span>
+              <span class="nav-text">Your Library</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="fa fas fa-plus-square"></span>
+              <span class="nav-text">Create Playlist</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span class="fa fas fa-heart"></span>
+              <span class="nav-text">Liked Songs</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="policies">
+        <ul>
+          <li>
+            <a href="#">Cookies</a>
+          </li>
+          <li>
+            <a href="#">Privacy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="topbar">
+        <div class="prev-next-buttons">
+          <button type="button" class="fa fas fa-chevron-left"></button>
+          <button type="button" class="fa fas fa-chevron-right"></button>
+        </div>
+
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Premium</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Support</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Download</a>
+                </li>
+                <!-- <li class="divider nav-item">|</li> -->
+              </ul>
+            </div>
+            <div class="log-container">
+              <ul class="sign-log">
+                <li class="divider d-none d-lg-inline">|</li>
+                <li>
+                  <a class="sign-up" href="#">Sign Up</a>
+                </li>
+                  <button type="button" class="log-button">Log In</button>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="spotify-playlists container">
+        <h2>Spotify Playlists</h2>
+
+        <div class="list d-flex flex-xl-nowrap flex-sm-wrap justify-content-center">
+          <div class="item">
+            <img src="html-css-spotifyweb/img/artists/selena.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Today's Top Hits</h4>
+            <p>Rema & Selena Gomez are on top of the...</p>
+          </div>
+
+          <div class="item">
+            <img src="html-css-spotifyweb/img/daily-mix/hip-hop.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Hip-Hop</h4>
+            <p>New Music from Lil Baby, Juice WRLD an...</p>
+          </div>
+
+          <div class="item">
+            <img src="html-css-spotifyweb/img/artists/imagine-dragons.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Imagine Dragons</h4>
+            <p>The biggest songs of Imagine dragons.</p>
+          </div>
+
+          <div class="item">
+            <img
+              src="html-css-spotifyweb/img/artists/death-cab-for-cutie.jpg"
+            />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Rock Classics</h4>
+            <p>Rock Legends & epic songs that continue t...</p>
+          </div>
+
+          <div class="item">
+            <img
+              src="html-css-spotifyweb/img/artists/florence-the-machine.jpg"
+            />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Chill Hits</h4>
+            <p>Kick back to the best new and recent chill...</p>
+          </div>
+
+          <div class="item">
+            <img src="html-css-spotifyweb/img/artists/young-stunners.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Desi Hip-Hop</h4>
+            <p>Let's groove to the Hindi-Urdu rap.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="spotify-playlists container">
+        <h2>Focus</h2>
+        <div class="list d-flex flex-xl-nowrap flex-sm-wrap justify-content-center">
+          <div class="item">
+            <img src="html-css-spotifyweb/img/daily-mix/piano.jpeg"/>
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Peaceful Piano</h4>
+            <p>Relax and indulge with beautiful piano pieces</p>
+          </div>
+
+          <div class="item">
+            <img src="html-css-spotifyweb/img/daily-mix/focus.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Deep Focus</h4>
+            <p>Keep calm and focus with ambient and pos...</p>
+          </div>
+
+          <div class="item">
+            <img src="html-css-spotifyweb/img/daily-mix/instrumental.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Instrumental Study</h4>
+            <p>Focus with soft study music in the...</p>
+          </div>
+
+          <div class="item">
+            <img src="html-css-spotifyweb/img/daily-mix/lofi.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Lo-fi study beats</h4>
+            <p>The perfect study beats, twenty four...</p>
+          </div>
+
+          <div class="item">
+            <img src="html-css-spotifyweb/img/daily-mix/coding.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Coding Mode</h4>
+            <p>Dedicated to all the programmers out there.</p>
+          </div>
+
+          <div class="item">
+            <img src="html-css-spotifyweb/img/daily-mix/focus-flow.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Focus Flow</h4>
+            <p>Uplifting instrumental hip-hop beats.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="spotify-playlists container">
+        <h2>Mood</h2>
+        <div class="list d-flex flex-xl-nowrap flex-sm-wrap justify-content-center">
+          <div class="item">
+            <img src="html-css-spotifyweb/img/daily-mix/mood-boost.jpeg"/>
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Mood Booster</h4>
+            <p>Get happy with today's dose of feel-good...</p>
+          </div>
+
+          <div class="item">
+            <img src="html-css-spotifyweb/img/daily-mix/feeling-good.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Feelin' Good</h4>
+            <p>Feel good with this positively timeless...</p>
+          </div>
+
+          <div class="item">
+            <img src="html-css-spotifyweb/img/daily-mix/dark-stormy.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Dark & Stormy</h4>
+            <p>Beautifully dark, dramatic tracks.</p>
+          </div>
+
+          <div class="item">
+            <img src="html-css-spotifyweb/img/daily-mix/morning.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Good Morning</h4>
+            <p>Get your day off to a cracking start.</p>
+          </div>
+
+          <div class="item">
+            <img src="html-css-spotifyweb/img/daily-mix/idk.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>idk.</h4>
+            <p>We hear you.</p>
+          </div>
+
+          <div class="item">
+            <img src="html-css-spotifyweb/img/daily-mix/chill-tracks.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Chill Tracks</h4>
+            <p>Softer kinda dance</p>
+          </div>
+        </div>
+
+        <hr />
+      </div>
+
+      <div class="preview">
+        <div class="text">
+          <h6>Preview of Spotify</h6>
+          <p>
+            Sign up to get unlimited songs and podcasts with occasional ads. No
+            credit card needed.
+          </p>
+        </div>
+        <div class="button">
+          <button type="button">Sign up free</button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/23cecef777.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
